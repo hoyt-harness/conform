@@ -1,0 +1,5 @@
+[tool.positronikal-check]
+# Exclude spec-kit internal scripts (not Positronikal-authored content).
+# Exclude Go source files from the indentation check: Go mandates tab
+# indentation (gofmt enforces it), so flagging tabs is a false positive.
+exclude-paths = [".specify/", "*.go", "*_test.go"]

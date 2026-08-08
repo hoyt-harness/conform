@@ -5,7 +5,8 @@
 set -e
 
 echo "ci-check: build..."
-go build ./...
+VERSION=$(git describe --tags --abbrev=0 2>/dev/null || echo "dev")
+go build -ldflags "-X main.version=${VERSION}" ./...
 
 echo "ci-check: vet..."
 go vet ./...

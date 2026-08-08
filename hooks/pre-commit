@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# pre-commit: fast formatting and static analysis (BLOCKING).
+set -e
+
+echo "pre-commit: vet..."
+go vet ./...
+
+echo "pre-commit: build..."
+go build ./...
+
+echo "Pre-commit checks passed."

@@ -6,9 +6,19 @@ import (
 	"os"
 )
 
+// version is set at build time via -ldflags "-X main.version=vX.Y.Z".
+var version = "dev"
+
 func main() {
+	ver := flag.Bool("version", false, "print version and exit")
+
 	check := flag.Bool("check", false, "report what would change without modifying files")
 	flag.Parse()
+
+	if *ver {
+		fmt.Println(version)
+		return
+	}
 
 	paths := flag.Args()
 	if len(paths) == 0 {
