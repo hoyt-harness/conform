@@ -1,0 +1,10 @@
+# Binaries
+conform
+conform.exe
+
+# Test artifacts
+*.test
+coverage.out
+
+# spec-kit feature state (resolved at runtime)
+.specify/feature.json

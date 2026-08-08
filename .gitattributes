@@ -1,0 +1,2 @@
+# Ensure hook scripts always use LF line endings (required for bash shebangs on Windows)
+hooks/* text eol=lf
