@@ -34,7 +34,9 @@ var Formatters = map[FileType]Formatter{
 	},
 	PowerShell: {
 		Binary: "pwsh",
-		Args:   []string{"-NoProfile", "-Command", "Invoke-Formatter -Path '{file}'"},
+		// Pass the path as $args[0] so it is never interpolated into
+		// the command string — prevents injection via malicious filenames.
+		Args: []string{"-NoProfile", "-Command", "Invoke-Formatter -Path $args[0]", "{file}"},
 	},
 	JSON: {
 		Binary: "prettier",
