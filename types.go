@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 package main
 
 // FileType identifies the language or format of a source file.
