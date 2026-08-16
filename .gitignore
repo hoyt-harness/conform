@@ -8,3 +8,6 @@ coverage.out
 
 # spec-kit feature state (resolved at runtime)
 .specify/feature.json
+
+# Health check reports
+var/
