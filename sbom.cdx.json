@@ -1,0 +1,85 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:d84578ec-5f65-463a-bb55-1f10cc67832c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-08-31T19:28:10-05:00",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-gomod",
+        "version": "v1.12.0",
+        "hashes": [
+          {
+            "alg": "MD5",
+            "content": "d4ae7987a65bc2ee8fd4c890ad798d47"
+          },
+          {
+            "alg": "SHA-1",
+            "content": "be7b8291182f1c765f24e56c34eb2b50f538699c"
+          },
+          {
+            "alg": "SHA-256",
+            "content": "f739844318409287223f8dbcbf20aad446256dcfa6fdaff6b47f49d9c96d58b1"
+          },
+          {
+            "alg": "SHA-384",
+            "content": "3e23faf55ff6891e0e1ae5f1a2eb2692925a070ed7709a633816023b6bf060fe59edd0750bf2f72c667e91a16e04baa2"
+          },
+          {
+            "alg": "SHA-512",
+            "content": "1f5b0c415bbcb1e3fbc493d99783006baee032ef17c30fbc0f7747db5c7bfc7dfac61a35a7b1105f21ac6137db655dedaa22aa42a6e41fffa60249e02484ac74"
+          }
+        ],
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-gomod",
+            "type": "vcs"
+          },
+          {
+            "url": "https://cyclonedx.org",
+            "type": "website"
+          }
+        ]
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:golang/github.com/hoyt-harness/conform@v0.1.3-0.20260815161837-aed8f4428300?type=module",
+      "type": "application",
+      "name": "github.com/hoyt-harness/conform",
+      "version": "v0.1.3-0.20260815161837-aed8f4428300",
+      "purl": "pkg:golang/github.com/hoyt-harness/conform@v0.1.3-0.20260815161837-aed8f4428300?goarch=amd64\u0026goos=windows\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/hoyt-harness/conform",
+          "type": "vcs"
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:gomod:build:env:CGO_ENABLED",
+          "value": "0"
+        },
+        {
+          "name": "cdx:gomod:build:env:GOARCH",
+          "value": "amd64"
+        },
+        {
+          "name": "cdx:gomod:build:env:GOOS",
+          "value": "windows"
+        },
+        {
+          "name": "cdx:gomod:build:env:GOVERSION",
+          "value": "go1.27.0"
+        }
+      ]
+    }
+  },
+  "dependencies": [
+    {
+      "ref": "pkg:golang/github.com/hoyt-harness/conform@v0.1.3-0.20260815161837-aed8f4428300?type=module"
+    }
+  ]
+}
