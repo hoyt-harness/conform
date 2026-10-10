@@ -12,11 +12,12 @@ report it by following these steps:
 
 We will respond within 48 hours.
 
+**Email:** admin@positronikal.tech — use this if you prefer not to use GitHub
+or if the vulnerability affects multiple Positronikal projects.
+
 ## Supported Versions
 
-| Version | Supported |
-|---------|-----------|
-| Latest  | ✓         |
+The latest stable release (see [Releases](https://github.com/hoyt-harness/conform/releases) or `git tag`) receives security patches. Earlier releases do not.
 
 ## Security Standards
 
