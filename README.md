@@ -110,4 +110,4 @@ Add to `~/.claude/settings.json` to run `conform` after every file write:
 
 ## License
 
-GNU General Public License v3.0 — see [COPYING.md](COPYING.md).
+GNU General Public License v3.0 — see [COPYING](COPYING).
